@@ -42,6 +42,7 @@ class SpringBootKafkaAppApplicationTests {
         for (PaymentDTO paymentDTO:paymentDTOList){
             this.producerService.sendPayment(paymentDTO);
         }
+        Thread.sleep(20000);
 		logger.info("test case payment published !!");
 	}
 
